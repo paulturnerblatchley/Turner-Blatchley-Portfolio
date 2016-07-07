@@ -1,0 +1,21 @@
+/*
+ * Media Qs
+***/
+
+@media (max-width: 600px) {
+  header {
+    .title {
+      font-size: 2em;
+      .location {
+        width: 100%;
+      }
+    }
+  }
+  .info,
+  .map {
+    width: 100%;
+  }
+  .temp-scale-button {
+    padding: 5px 11px;
+  }
+}

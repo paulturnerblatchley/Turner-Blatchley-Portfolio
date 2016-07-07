@@ -1,0 +1,133 @@
+/*
+ * FILE IMPORTS
+***/
+
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+@import 'mediaqs';
+
+
+/*
+ * GENERAL
+***/
+
+html,
+body,
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $font-stack;
+}
+
+
+/*
+ * HEADER
+***/
+
+header {
+  padding: 15px;
+  .title {
+    padding-bottom: 15px;
+    .location {
+      border: none;
+      width: 400px;
+      padding: 12px 10px 5px;
+      margin: 10px auto;
+      box-shadow: inset 0 0 2px #666;
+    }
+  }
+}
+
+
+/*
+ * MAIN
+***/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*
+ * MAP
+***/
+
+.map {
+  width: 50%;
+  height: 400px;
+  .overlay {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 400px;
+    margin-top: -400px;
+    z-index: 9999;
+  }
+  #map {
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+  }
+}
+
+
+/*
+ * INFO
+***/
+
+.info {
+  width: 50%;
+  height: 400px;
+  padding: 15px;
+  h2 {
+    text-transform: uppercase;
+  }
+  .temp-box {
+    .temp {
+      font-size: 5em;
+      display: inline-block;
+    }
+    .temp-button-box {
+      display: inline-block;
+      .temp-scale-button {
+        margin-top: 5px;
+        display: block;
+        border-radius: 50%;
+        opacity: .8;
+      }
+      .active {
+        opacity: 1;
+      }
+    }
+  }
+  .weather-box {
+    .wi {
+      font-size: 5em;
+      padding: 10px 0 15px 0;
+    }
+    .desc {
+      font-size: 1.5em;
+    }
+  }
+}
+
+
+/*
+ * FOOTER
+***/
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  color: #eee;
+  padding: 20px 0;
+}
+
+
