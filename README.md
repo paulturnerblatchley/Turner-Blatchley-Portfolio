@@ -13,5 +13,5 @@
   Forecast.io Weather API
 
 # See it in action: 
-  <a href="http://paulturnerblatchley.com/weather" target="_blank">paulturnerblatchley.com/weather</a>
+  http://paulturnerblatchley.com/weather
 
