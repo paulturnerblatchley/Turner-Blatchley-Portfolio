@@ -4,4 +4,5 @@ based on the user's current location. It allows the user to search for weather i
 other locations around the world, and changes the color palette to match the current 
 weather and time of day.
 
+See it in action: http://paulturnerblatchley.com/weather
 
