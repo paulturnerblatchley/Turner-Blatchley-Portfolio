@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Local Weather</title>
+		<title>Color of the Weather</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<!--BOOTSTRAP-->
+		<link	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+			rel="stylesheet" 
+			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+			crossorigin="anonymous">
+		<!--OPEN SANS FONT-->
+		<link 	href='https://fonts.googleapis.com/css?family=Open+Sans' 
+			rel='stylesheet' 
+			type='text/css'>
+		<!--WEATHER ICONS-->
+		<link 	href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" 
+			rel="stylesheet" 
+			type="text/css">
+		<!--COMPILED STYLESHEET-->
+		<link 	href="stylesheets/main.css" 
+			rel="stylesheet" 
+			type="text/css" >
 	</head>
 
 	<body>
 		<div class="container-fluid">
 		  <header id="header" class="clearfix">
-		    <h1 id="page-title" class="title">Current Weather in  <input class="location" value="" type="text" onClick="this.setSelectionRange(0, this.value.length)" autofocus></h1>
+		    <h1 id="page-title" class="title">
+		    	Current Weather in  
+		    	    <input class="location" value="" type="text" onClick="this.setSelectionRange(0, this.value.length)" autofocus>
+		    </h1>
 		  </header>
 		  <main>
 		    <div class="info text-center">
@@ -38,7 +54,8 @@
 		  <footer>
 		    <p class="text-center">Weather App by <a href="http://ptbweb.com" target="_blank">Paul T. Blatchley</a></p>
 		  </footer>
-		</div>	
+		</div>
+		<!--jQuery 3-->
 		<script
 			  src="https://code.jquery.com/jquery-3.0.0.min.js"
 			  integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
@@ -49,6 +66,7 @@
   			async 
   			defer>
 		</script>
-		 <script src="script4.js"></script> 
+		<!--JSON Requests & Functionality-->
+		<script src="script.js"></script> 
 	</body>
 </html>
