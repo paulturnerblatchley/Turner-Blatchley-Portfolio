@@ -1,0 +1,7 @@
+/*
+ * FUNCTIONS
+****/
+
+@function color($weather, $level) {
+  @return map-get(map-get($palettes, $weather), $level);
+}

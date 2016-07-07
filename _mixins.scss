@@ -1,0 +1,35 @@
+/*
+ * MIXINS: WEATHER CLASSES
+***/
+
+@mixin weather($class) {
+  .#{$class}-text {
+    color: color($class, "text");
+  }
+  .#{$class}-light {
+    background-color: color($class, "light");
+  }
+  .#{$class}-dark {
+    background-color: color($class, "dark");
+  }
+  .#{$class}-accent-text {
+    color: color($class, "accent");
+  }
+  .#{$class}-accent-bg {
+    background-color: color($class, "accent");
+  }
+  .#{$class}-accent-border {
+      border-color: color($class, "accent");
+    }
+}
+
+@include weather(clear-day);
+@include weather(clear-night);
+@include weather(rain);
+@include weather(snow);
+@include weather(sleet);
+@include weather(wind);
+@include weather(fog);
+@include weather(cloudy);
+@include weather(partly-cloudy-day);
+@include weather(partly-cloudy-night);
