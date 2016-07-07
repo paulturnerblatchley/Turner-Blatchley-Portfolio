@@ -7,10 +7,10 @@
 # Tech Used:
   HTML/CSS<br>
   SASS<br>
-  BOOTSTRAP<br>
-  JAVASCRIPT/jQUERY<br>
-  GOOGLE MAPS & GEOCODING API <br>
-  FORECASTS.IO WEATHER API
+  Bootstrap<br>
+  Javascript/jQuery<br>
+  Google Maps Javscript & Geocoding API <br>
+  Forecast.io Weather API
 
 # See it in action: 
   http://paulturnerblatchley.com/weather
