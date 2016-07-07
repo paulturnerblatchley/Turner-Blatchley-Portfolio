@@ -5,11 +5,11 @@
   weather and time of day.
 
 # Tech Used:
-  HTML/CSS
-  SASS
-  BOOTSTRAP
-  JAVASCRIPT/jQUERY
-  GOOGLE MAPS & GEOCODING API 
+  HTML/CSS<br>
+  SASS<br>
+  BOOTSTRAP<br>
+  JAVASCRIPT/jQUERY<br>
+  GOOGLE MAPS & GEOCODING API <br>
   FORECASTS.IO WEATHER API
 
 # See it in action: 
