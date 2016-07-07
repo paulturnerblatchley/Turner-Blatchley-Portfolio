@@ -1,8 +1,17 @@
 # Color-of-the-Weather
-This is a simple weather app that shows current temperature and weather conditions 
-based on the user's current location. It allows the user to search for weather in
-other locations around the world, and changes the color palette to match the current 
-weather and time of day.
+  This is a simple weather app that shows current temperature and weather conditions 
+  based on the user's current location. It allows the user to search for weather in
+  other locations around the world, and changes the color palette to match the current 
+  weather and time of day.
 
-See it in action: http://paulturnerblatchley.com/weather
+# Tech Used:
+  HTML/CSS
+  SASS
+  BOOTSTRAP
+  JAVASCRIPT/jQUERY
+  GOOGLE MAPS & GEOCODING API 
+  FORECASTS.IO WEATHER API
+
+# See it in action: 
+  http://paulturnerblatchley.com/weather
 
