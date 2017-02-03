@@ -13,5 +13,5 @@
   Forecast.io Weather API
 
 # See it in action: 
-  http://paulturnerblatchley.com/weather
+  http://paulturnerblatchley.com/coloroftheweather/
 
