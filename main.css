@@ -170,6 +170,7 @@ img {
     flex: 1;
     padding-right: 2rem;
     z-index: 3;
+    position: relative;
 }
 
 .hero-title {
@@ -190,17 +191,19 @@ img {
     position: relative;
     width: 50%;
     max-width: 600px;
+    z-index: 2;
 }
 
-.hero-circle {
+.hero-blob {
     position: absolute;
     width: 150%;
     height: 150%;
     background-color: var(--blue-dark);
-    border-radius: 50%;
     top: -25%;
     left: -50%;
     z-index: 1;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: blob-morph 25s ease-in-out infinite;
 }
 
 .hero-image {
@@ -212,16 +215,84 @@ img {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.accent-shape {
+.accent-blob {
     position: absolute;
     width: 40%;
     height: 60%;
-    background-color: #FFD1BD; /* A peachy color similar to the inspiration */
+    background-color: var(--yellow); /* Using the FED300 yellow from your scheme */
     opacity: 0.8;
-    border-radius: 50%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     top: -10%;
-    right: -10%;
+    right: -5%;
     z-index: 1;
+    animation: blob-morph-alt 20s ease-in-out infinite;
+}
+
+.accent-blob-secondary {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    background-color: var(--blue-medium); /* Using the 3FA7D6 medium blue */
+    opacity: 0.6;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    bottom: -15%;
+    left: -5%;
+    z-index: 1;
+    animation: blob-morph-secondary 18s ease-in-out infinite;
+}
+
+@keyframes blob-morph {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    25% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    }
+    50% {
+        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    }
+    75% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    }
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+}
+
+@keyframes blob-morph-alt {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    25% {
+        border-radius: 40% 60% 70% 30% / 50% 60% 30% 60%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 40% 60% 50%;
+    }
+    75% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+@keyframes blob-morph-secondary {
+    0% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+    25% {
+        border-radius: 60% 40% 40% 60% / 60% 40% 40% 60%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    75% {
+        border-radius: 60% 40% 40% 60% / 60% 40% 40% 60%;
+    }
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
 }
 
 /* Table of Contents */
@@ -790,7 +861,7 @@ img {
         width: 80%;
     }
     
-    .hero-circle {
+    .hero-blob {
         width: 130%;
         height: 130%;
         top: -15%;
