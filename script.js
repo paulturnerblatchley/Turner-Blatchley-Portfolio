@@ -81,3 +81,4 @@ playButtons.forEach(button => {
         alert('Video would play here in the final implementation. This is a placeholder for the portfolio demonstration.');
     });
 });
+
