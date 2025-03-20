@@ -612,8 +612,9 @@ img {
 }
 
 .text-bubble.bubble-4::before {
+
     top: -10px;
-    left: 30px;
+    right: 30px;
 }
 
 .text-bubble-content {
@@ -692,55 +693,18 @@ img {
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 992px) {
-    .copywriting-showcase {
-        min-height: 700px;
-    }
-    
+@media screen and (max-width: 1400px) {
     .text-bubble {
-        max-width: 250px;
+        position: relative!important;
+        top: auto!important;
+        left: auto!important;
+        right: auto!important;
+        bottom: auto!important;
+        width: 90%!important;
+        max-width:100%!important;
+        margin: 20px auto!important;
     }
-    
-    .text-bubble.bubble-1 {
-        top: 20px;
-        left: 5%;
-    }
-    
-    .text-bubble.bubble-2 {
-        top: 150px;
-        right: 5%;
-    }
-    
-    .text-bubble.bubble-3 {
-        bottom: 150px;
-        left: 5%;
-    }
-    
-    .text-bubble.bubble-4 {
-        bottom: 50px;
-        right: 5%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .copywriting-showcase {
-        flex-direction: column;
-    }
-    
-    .report-image-container {
-        margin-bottom: 2rem;
-    }
-    
-    .text-bubble {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-        max-width: 100%;
-        margin-bottom: 1.5rem;
-    }
-    
+        
     .text-bubble::before {
         display: none;
     }
@@ -748,7 +712,20 @@ img {
     .bubble-decoration {
         display: none;
     }
+    .copywriting-showcase {
+        min-height: 700px;
+    }
+    .copywriting-showcase {
+        flex-direction: column;
+    }
+    
+    .report-image-container {
+        margin-bottom: 2rem;
+    }
 }
+
+
+
 
 /* Photography Section - Offset Grid Styles */
 #photography {
@@ -1654,7 +1631,7 @@ background-color: #fff;
 
 @media screen and (max-width: 992px) {
     .hero-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
     }
     
@@ -1665,6 +1642,7 @@ background-color: #fff;
     
     .hero-title {
         font-size: 3.5rem;
+        margin-top: 20px;
     }
     
     .hero-image-container {
@@ -1672,13 +1650,21 @@ background-color: #fff;
     }
     
     .hero-blob {
+        display: none;
         width: 130%;
         height: 130%;
-        top: -15%;
+        top: 30%;
         left: -15%;
     }
     .accent-blob {
         width: 100%;
+    }
+    .accent-blob-secondary {
+        width: 100%;
+        height: 60%
+    }
+    h2::after {
+        display: none;
     }
 }
 
