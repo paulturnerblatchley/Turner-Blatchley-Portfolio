@@ -2,9 +2,9 @@
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-	navbar.classList.add('scrolled');
+        navbar.classList.add('scrolled');
     } else {
-	navbar.classList.remove('scrolled');
+        navbar.classList.remove('scrolled');
     }
 });
 
@@ -20,8 +20,18 @@ burger.addEventListener('click', function() {
 
 nav.forEach(link => {
     link.addEventListener('click', function() {
-	navLinks.classList.remove('active');
-	burger.classList.remove('active');
+        navLinks.classList.remove('active');
+        burger.classList.remove('active');
+    });
+});
+
+// Scroll to section
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
 
@@ -30,12 +40,12 @@ const fadeElements = document.querySelectorAll('.fade-in');
 
 function checkFade() {
     fadeElements.forEach(element => {
-	const elementTop = element.getBoundingClientRect().top;
-	const elementBottom = element.getBoundingClientRect().bottom;
-	
-	if (elementTop < window.innerHeight - 100 && elementBottom > 0) {
-	    element.classList.add('visible');
-	}
+        const elementTop = element.getBoundingClientRect().top;
+        const elementBottom = element.getBoundingClientRect().bottom;
+        
+        if (elementTop < window.innerHeight - 100 && elementBottom > 0) {
+            element.classList.add('visible');
+        }
     });
 }
 
@@ -55,9 +65,9 @@ const closeModal = document.querySelector('.close-modal');
 
 galleryItems.forEach(item => {
     item.addEventListener('click', function() {
-	modal.style.display = 'flex';
-	modalImg.src = this.querySelector('.gallery-image').src;
-	modalCaption.innerHTML = this.querySelector('.gallery-caption').innerHTML;
+        modal.style.display = 'flex';
+        modalImg.src = this.querySelector('.gallery-image').src;
+        modalCaption.innerHTML = this.querySelector('.gallery-caption').innerHTML;
     });
 });
 
@@ -67,7 +77,7 @@ closeModal.addEventListener('click', function() {
 
 window.addEventListener('click', function(event) {
     if (event.target == modal) {
-	modal.style.display = 'none';
+        modal.style.display = 'none';
     }
 });
 
@@ -76,16 +86,6 @@ const playButtons = document.querySelectorAll('.play-button');
 
 playButtons.forEach(button => {
     button.addEventListener('click', function() {
-	alert('Video would play here in the final implementation. This is a placeholder for the portfolio demonstration.');
+        alert('Video would play here in the final implementation. This is a placeholder for the portfolio demonstration.');
     });
 });
-    
-// Scroll to section
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-	e.preventDefault();
-	document.querySelector(this.getAttribute('href')).scrollIntoView({
-	    behavior: 'smooth'
-	});
-    });
- });
