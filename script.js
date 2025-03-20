@@ -18,26 +18,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Fade-in animation
-const fadeElements = document.querySelectorAll('.fade-in');
-
-function checkFade() {
-    fadeElements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const elementBottom = element.getBoundingClientRect().bottom;
-        
-        if (elementTop < window.innerHeight - 100 && elementBottom > 0) {
-            element.classList.add('visible');
-        }
-    });
-}
-
-window.addEventListener('scroll', checkFade);
-window.addEventListener('resize', checkFade);
-window.addEventListener('load', checkFade);
-
-// Initialize check on page load
-checkFade();
+// Improved Fade-in animation
+document.addEventListener('DOMContentLoaded', function() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    // Make sure we found elements
+    console.log('Found ' + fadeElements.length + ' fade-in elements');
+    
+    function checkFade() {
+        fadeElements.forEach(element => {
+            // Get element position relative to viewport
+            const rect = element.getBoundingClientRect();
+            
+            // Check if element is in viewport
+            if (rect.top < window.innerHeight - 100) {
+                element.classList.add('visible');
+                console.log('Element made visible');
+            }
+        });
+    }
+    
+    // Run on scroll events
+    window.addEventListener('scroll', checkFade);
+    
+    // Run on resize events
+    window.addEventListener('resize', checkFade);
+    
+    // Initial check
+    setTimeout(checkFade, 100); // Small delay to ensure layout is complete
+});
 
 // Gallery Modal
 const modal = document.getElementById('galleryModal');
