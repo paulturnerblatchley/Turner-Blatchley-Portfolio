@@ -807,15 +807,19 @@ img {
     }
 }
 
+/* Improved fade-in animation */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+    pointer-events: none; /* Ensure it doesn't block interaction during animation */
 }
 
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto; /* Restore interaction */
 }
 
 .no-js .fade-in {
