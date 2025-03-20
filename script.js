@@ -8,23 +8,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Mobile Navigation Toggle
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-const nav = document.querySelectorAll('.nav-link');
-
-burger.addEventListener('click', function() {
-    navLinks.classList.toggle('active');
-    burger.classList.toggle('active');
-});
-
-nav.forEach(link => {
-    link.addEventListener('click', function() {
-        navLinks.classList.remove('active');
-        burger.classList.remove('active');
-    });
-});
-
 // Scroll to section
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
