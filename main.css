@@ -818,6 +818,12 @@ img {
     transform: translateY(0);
 }
 
+.no-js .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     body {
