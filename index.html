@@ -13,9 +13,9 @@
 </head>
 <body>
 <!-- Fixed Navigation Bar - Corrected with proper section IDs -->
-<nav id="fixed-nav" class="fixed-nav">
+<nav id="portfolio-nav" class="portfolio-nav">
     <div class="nav-container">
-        <a href="#hero" class="nav-item nav-home">
+        <a href="#hero" class="nav-logo">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -30,7 +30,33 @@
             <a href="#annual-report" class="nav-item">Annual Report</a>
             <a href="#conclusion" class="nav-item">Conclusion</a>
         </div>
-        <a href="#contact" class="nav-item nav-contact">Contact</a>
+        <a href="#contact" class="nav-contact">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Contact</span>
+        </a>
+        
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <a href="#website-redesign" class="mobile-nav-link">Website Redesign</a>
+        <a href="#newsletter-videos" class="mobile-nav-link">Inspiration Videos</a>
+        <a href="#mock-trial" class="mobile-nav-link">Mock Trial Semi-Finals</a>
+        <a href="#photography" class="mobile-nav-link">Photos</a>
+        <a href="#golden-bell" class="mobile-nav-link">Golden Bell Awards</a>
+        <a href="#annual-report" class="mobile-nav-link">Annual Report</a>
+        <a href="#conclusion" class="mobile-nav-link">Conclusion</a>
+        <a href="#contact" class="mobile-nav-link mobile-contact">Contact</a>
     </div>
 </nav>
     <!-- Updated Hero Section -->
@@ -57,7 +83,14 @@
             <span class="case-study-number">Case Study #1</span>
             <h2 class="case-study-title">SBCSS Website Redesign</h2>
             <p class="case-study-tagline">Transforming an outdated website into a modern, user-friendly digital experience for a complex educational organization.</p>
-            
+            <a href="https://sbcss.net" target="_blank" class="view-project-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>View Live Project</span>
+            </a>
             <div class="project-meta">
                 <div class="meta-item">
                     <span class="meta-label">Timeline</span>
@@ -115,7 +148,7 @@
                         </svg>
                     </div>
                     <h4>Tight Timeline</h4>
-                    <p>Meeting a strict summer launch deadline to ensure minimal disruption to the academic calendar and school operations.</p>
+                    <p>Meeting a strict summer launch deadline to ensure minimal disruption to organizational operations.</p>
                 </div>
                 
                 <div class="web-challenge-card fade-in">
@@ -379,10 +412,10 @@
                 <div class="skill-tag">Web Design</div>
                 <div class="skill-tag">Information Architecture</div>
                 <div class="skill-tag">Content Strategy</div>
+                <div class="skill-tag">Copywriting</div>
                 <div class="skill-tag">Project Management</div>
                 <div class="skill-tag">Stakeholder Communication</div>
                 <div class="skill-tag">Training & Documentation</div>
-                <div class="skill-tag">Copywriting</div>
                 <div class="skill-tag">UI/UX Design</div>
             </div>
         </div>
@@ -458,7 +491,14 @@
             <span class="case-study-number">Case Study #2</span>
             <h2 class="case-study-title">Superintendent's Inspiration Videos</h2>
             <p class="case-study-tagline">Elevating executive communications with professional video production, creative storytelling, and innovative translation solutions.</p>
-            
+            <a href="https://www.youtube.com/watch?v=jprHxmkePtY&list=PL1loU7saLXGqienEKTrVfgRXR3hTK5XQt&index=37" target="_blank" class="view-project-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>View Live Project</span>
+            </a>
             <div class="project-meta">
                 <div class="meta-item">
                     <span class="meta-label">Platforms</span>
@@ -549,13 +589,8 @@
                     
                     <div class="improvement-item">
                         <div class="improvement-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.5 6.5H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M6.5 10H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M13.5 13.5H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M13.5 17H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M6.5 13.5C6.5 15.433 8.067 17 10 17C11.933 17 13.5 15.433 13.5 13.5C13.5 11.567 11.933 10 10 10C8.067 10 6.5 11.567 6.5 13.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#0F4C81" height="40px" width="40px" viewBox="0 0 24 24" >
+                                <path d="M13,4V20a1,1,0,0,1-2,0V4a1,1,0,0,1,2,0ZM8,5A1,1,0,0,0,7,6V18a1,1,0,0,0,2,0V6A1,1,0,0,0,8,5ZM4,7A1,1,0,0,0,3,8v8a1,1,0,0,0,2,0V8A1,1,0,0,0,4,7ZM16,5a1,1,0,0,0-1,1V18a1,1,0,0,0,2,0V6A1,1,0,0,0,16,5Zm4,2a1,1,0,0,0-1,1v8a1,1,0,0,0,2,0V8A1,1,0,0,0,20,7Z"/></svg>
                         </div>
                         <h5>Audio Excellence</h5>
                         <p>Introduced comprehensive audio mixing with natural vocal sound, music scoring, and sound effects to enhance storytelling.</p>
@@ -575,14 +610,25 @@
                     
                     <div class="improvement-item">
                         <div class="improvement-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.93 10.93L7.5 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15.07 10.93L16.5 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15.07 13.07L16.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.93 13.07L7.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#0F4C81" height="40px" width="40px" viewBox="0 0 24 24" >
+                                <g id="cycle">
+                                    <g>
+                                        <path d="M17.1,23.8L12.4,21l2.7-4.8l1.7,1l-1.7,3.1l3,1.8L17.1,23.8z M5.7,11L4,8L1.1,9.7L0.1,8l4.7-2.8L7.5,10L5.7,11z"/>
+                                    </g>
+                                    <g>
+                                        <polygon points="22,6 16.5,6 16.5,4 20,4 20,0.5 22,0.5   "/>
+                                    </g>
+                                    <g>
+                                        <path d="M15.4,21.5l-0.4-2c4-0.9,6.9-4.5,6.9-8.6c0-0.6-0.1-1.3-0.2-1.9l2-0.4c0.2,0.8,0.3,1.6,0.3,2.3    C24,16.1,20.4,20.5,15.4,21.5z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M9.8,21.3C5.3,19.9,2.2,15.8,2.2,11c0-1.3,0.2-2.6,0.7-3.8l1.9,0.7c-0.4,1-0.6,2-0.6,3.1c0,3.9,2.5,7.2,6.1,8.4L9.8,21.3z    "/>
+                                    </g>
+                                    <g>
+                                        <path d="M19.6,5c-1.7-1.9-4.1-3-6.6-3c-2.1,0-4.1,0.8-5.7,2.1L6,2.6C7.9,0.9,10.4,0,13,0c3.1,0,6,1.3,8.1,3.6L19.6,5z"/>
+                                    </g>
+                                </g>
+                                </svg>
                         </div>
                         <h5>Visual Consistency</h5>
                         <p>Designed updated motion graphics that better aligned with the organization's new brand identity and website.</p>
@@ -601,7 +647,7 @@
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h4>Strategic Planning</h4>
-                        <p>Collaborated with the senior communications specialist at the beginning of each month to identify visually compelling events and develop content strategy.</p>
+                        <p>Collaborated with the Senior Communications Specialist at the beginning of each month to identify visually compelling events and develop content strategy.</p>
                         <div class="step-visual">
                             <img src="images/inspirationplanning.jpeg" alt="Strategic planning session" class="step-image">
                         </div>
@@ -642,10 +688,9 @@
                             </div>
                             <div class="step-feature">
                                 <div class="feature-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1C5.925 1 1 5.925 1 12C1 18.075 5.925 23 12 23C18.075 23 23 18.075 23 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M19 5V12H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5.06152 12C5.55362 8.05369 8.92001 5 12.9996 5C17.4179 5 20.9996 8.58172 20.9996 13C20.9996 17.4183 17.4179 21 12.9996 21H8M13 13V9M11 3H15M3 15H8M5 18H10" stroke="#3FA7D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                 </div>
                                 <span>Efficient Workflows</span>
                             </div>
@@ -657,7 +702,7 @@
                     <div class="step-number">4</div>
                     <div class="step-content">
                         <h4>Post-Production</h4>
-                        <p>Transformed raw footage into polished, cohesive narratives through meticulous editing, detailed green screen keying, professional color grading, and comprehensive audio mixing.</p>
+                        <p>Transformed raw footage into polished, cohesive narratives through meticulous editing, multiple song intercutting, professional color grading, and comprehensive audio mixing.</p>
                         <div class="editing-showcase">
                             <div class="editing-aspect">
                                 <span class="aspect-label">Color Grading</span>
@@ -735,7 +780,7 @@
                             <div class="step-number">01</div>
                             <div class="step-description">
                                 <h5>Technology Assessment</h5>
-                                <p>Researched and evaluated AI translation platforms, selecting HeyGen for its natural lip-syncing capabilities and voice quality.</p>
+                                <p>Contacted education partners, researched and evaluated AI translation platforms and ultimately selected HeyGen for its natural lip-syncing capabilities and voice quality.</p>
                             </div>
                         </div>
                         
@@ -767,8 +812,9 @@
                 
                 <div class="innovation-visual">
                     <div class="translation-demo">
+                        <div class="video-frame">
                         <a href="https://youtu.be/THyc2dBpnNA?si=1RoNJPDEBFoQ1fa-&t=24" target="_blank">
-                            <div class="demo-video">
+                            <div class="demo-video frame-content">
                                 <img src="images/tedSpanish.png" alt="AI Video Translation Example" class="demo-image">
                                 <div class="play-overlay">
                                     <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -778,6 +824,7 @@
                                 </div>
                             </div>
                         </a>
+                    </div>
                         <div class="translation-caption">
                             HeyGen AI-translated video with natural lip-syncing and voice matching
                         </div>
@@ -794,10 +841,9 @@
                 <div class="impact-grid">
                 <div class="impact-card fade-in">
                     <div class="impact-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M8 14L12 10L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M5.06152 12C5.55362 8.05369 8.92001 5 12.9996 5C17.4179 5 20.9996 8.58172 20.9996 13C20.9996 17.4183 17.4179 21 12.9996 21H8M13 13V9M11 3H15M3 15H8M5 18H10" stroke="#3FA7D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                     </div>
                     <h4>Production Efficiency</h4>
                     <p>Streamlined review process due to meticulous attention to detail, resulting in first-version approvals with minimal revisions needed.</p>
@@ -817,11 +863,10 @@
             <div class="impact-grid">
                 <div class="impact-card fade-in">
                     <div class="impact-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 15C3 17.2091 4.79086 19 7 19H17C19.2091 19 21 17.2091 21 15V9C21 6.79086 19.2091 5 17 5H7C4.79086 5 3 6.79086 3 9V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <rect x="7" y="9" width="4" height="6" rx="1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M17 9H13C12.4477 9 12 9.44772 12 10V14C12 14.5523 12.4477 15 13 15H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 9.30803L14.89 6.07703V17.923L9.849 16.538C9.93273 17.782 9.01792 18.8695 7.778 19C6.51522 18.8634 5.59405 17.7412 5.706 16.476V15.615L2.5 14.692V9.30803Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.5 12.157C21.9142 12.157 22.25 11.8212 22.25 11.407C22.25 10.9928 21.9142 10.657 21.5 10.657V12.157ZM19.636 10.657C19.2218 10.657 18.886 10.9928 18.886 11.407C18.886 11.8212 19.2218 12.157 19.636 12.157V10.657ZM18.7823 17.2649C19.0733 17.5597 19.5481 17.5627 19.8429 17.2717C20.1377 16.9807 20.1407 16.5059 19.8497 16.2111L18.7823 17.2649ZM18.5337 14.8781C18.2427 14.5833 17.7679 14.5803 17.4731 14.8713C17.1783 15.1623 17.1753 15.6371 17.4663 15.9319L18.5337 14.8781ZM19.8513 6.60432C20.1426 6.30978 20.1399 5.83491 19.8453 5.54368C19.5508 5.25245 19.0759 5.25513 18.7847 5.54968L19.8513 6.60432ZM17.4667 6.88268C17.1754 7.17722 17.1781 7.65209 17.4727 7.94332C17.7672 8.23455 18.2421 8.23187 18.5333 7.93732L17.4667 6.88268ZM15.64 17.923C15.64 17.5088 15.3042 17.173 14.89 17.173C14.4758 17.173 14.14 17.5088 14.14 17.923H15.64ZM14.14 19C14.14 19.4142 14.4758 19.75 14.89 19.75C15.3042 19.75 15.64 19.4142 15.64 19H14.14ZM14.14 6.077C14.14 6.49121 14.4758 6.827 14.89 6.827C15.3042 6.827 15.64 6.49121 15.64 6.077H14.14ZM15.64 5C15.64 4.58579 15.3042 4.25 14.89 4.25C14.4758 4.25 14.14 4.58579 14.14 5H15.64ZM1.75 9.308C1.75 9.72221 2.08579 10.058 2.5 10.058C2.91421 10.058 3.25 9.72221 3.25 9.308H1.75ZM3.25 8.231C3.25 7.81679 2.91421 7.481 2.5 7.481C2.08579 7.481 1.75 7.81679 1.75 8.231H3.25ZM1.75 15.769C1.75 16.1832 2.08579 16.519 2.5 16.519C2.91421 16.519 3.25 16.1832 3.25 15.769H1.75ZM3.25 14.692C3.25 14.2778 2.91421 13.942 2.5 13.942C2.08579 13.942 1.75 14.2778 1.75 14.692H3.25ZM5.86909 14.8829C5.46479 14.7929 5.06402 15.0476 4.97395 15.4519C4.88387 15.8562 5.13861 16.257 5.54291 16.3471L5.86909 14.8829ZM9.68591 17.2701C10.0902 17.3601 10.491 17.1054 10.5811 16.7011C10.6711 16.2968 10.4164 15.896 10.0121 15.8059L9.68591 17.2701ZM21.5 10.657H19.636V12.157H21.5V10.657ZM19.8497 16.2111L18.5337 14.8781L17.4663 15.9319L18.7823 17.2649L19.8497 16.2111ZM18.7847 5.54968L17.4667 6.88268L18.5333 7.93732L19.8513 6.60432L18.7847 5.54968ZM14.14 17.923V19H15.64V17.923H14.14ZM15.64 6.077V5H14.14V6.077H15.64ZM3.25 9.308V8.231H1.75V9.308H3.25ZM3.25 15.769V14.692H1.75V15.769H3.25ZM5.54291 16.3471L9.68591 17.2701L10.0121 15.8059L5.86909 14.8829L5.54291 16.3471Z" fill="currentColor"/>
+                            </svg>
                     </div>
                     <h4>Amplified Reach</h4>
                     <p>Increased social media engagement by strategically tagging school and district accounts whose students were featured in videos.</p>
@@ -829,11 +874,12 @@
                 
                 <div class="impact-card fade-in">
                     <div class="impact-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M8.09 8.99996C8.3251 8.33163 8.78915 7.76807 9.39999 7.40909C10.0108 7.05012 10.7289 6.9189 11.4272 7.03867C12.1255 7.15844 12.7588 7.52148 13.2151 8.06349C13.6713 8.60549 13.9211 9.29148 13.92 9.99996C13.92 12 10.92 13 10.92 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 17H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 10C18 10 14.4627 11.5 12 11.5C9.53727 11.5 6 10 6 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 12V13.4522M12 13.4522C12 14.0275 12.1654 14.5906 12.4765 15.0745L15 19M12 13.4522C12 14.0275 11.8346 14.5906 11.5235 15.0745L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
                     </div>
                     <h4>Accessibility</h4>
                     <p>Pioneered AI video translation to make content available to Spanish-speaking families and community members.</p>
@@ -930,7 +976,14 @@
             <span class="case-study-number">Case Study #3</span>
             <h2 class="case-study-title">Mock Trial Semi-Finals Instagram Reel</h2>
             <p class="case-study-tagline">Creating emotionally resonant social media content that showcases student voices and amplifies organizational reach.</p>
-            
+            <a href="https://www.instagram.com/reel/DE8dqXoSlMb/" target="_blank" class="view-project-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>View Live Project</span>
+            </a>
             <div class="project-meta">
                 <div class="meta-item">
                     <span class="meta-label">Platform</span>
@@ -1044,7 +1097,7 @@
             <div class="creative-approach-container">
                 <div class="approach-content fade-in">
                     <p class="approach-intro">
-                        This reel highlights the creative storytelling techniques used to transform standard event coverage into an emotionally engaging narrative that showcases student achievement and community partnership.
+                        This reel highlights the creative storytelling techniques I utilize to transform standard event coverage into an emotionally engaging narrative that showcases student achievement and community partnership.
                     </p>
                     <div class="approach-grid">
                         <div class="approach-card">
@@ -1058,10 +1111,10 @@
                         </div>
                         <div class="approach-card">
                             <div class="approach-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <path d="M14.5 19.5H9.5M14.5 19.5C14.5 18.7865 14.5 18.4297 14.5381 18.193C14.6609 17.4296 14.6824 17.3815 15.1692 16.7807C15.3201 16.5945 15.8805 16.0927 17.0012 15.0892C18.5349 13.7159 19.5 11.7206 19.5 9.5C19.5 8.62341 19.3496 7.78195 19.0732 7M14.5 19.5C14.5 20.4346 14.5 20.9019 14.299 21.25C14.1674 21.478 13.978 21.6674 13.75 21.799C13.4019 22 12.9346 22 12 22C11.0654 22 10.5981 22 10.25 21.799C10.022 21.6674 9.83261 21.478 9.70096 21.25C9.5 20.9019 9.5 20.4346 9.5 19.5M9.5 19.5C9.5 18.7865 9.5 18.4297 9.46192 18.193C9.3391 17.4296 9.31762 17.3815 8.83082 16.7807C8.67987 16.5945 8.11945 16.0927 6.99876 15.0892C5.4651 13.7159 4.5 11.7206 4.5 9.5C4.5 5.35786 7.85786 2 12 2C13.3637 2 14.6423 2.36394 15.7442 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12.7857 8.5L10.6428 11.5H13.6428L11.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                             </div>
                             <h4>Personal Transformation Story</h4>
                             <p>Featured a particularly compelling student narrative about how the mock trial program transformed him from a shy student into a confident, well-spoken senior.</p>
@@ -1141,13 +1194,9 @@
                 <div class="social-challenge-block fade-in">
                     <div class="social-challenge-header">
                         <div class="social-challenge-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18.63 13C18.1851 11.3714 17.979 9.69 18.02 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M6.26 6.26001C6.08627 6.82261 5.99861 7.41105 6 8.00001C6 15 3 17 3 17H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.6585 2 9.35545 2.43597 8.26 3.22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M2 2L22 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path d="M5.06152 12C5.55362 8.05369 8.92001 5 12.9996 5C17.4179 5 20.9996 8.58172 20.9996 13C20.9996 17.4183 17.4179 21 12.9996 21H8M13 13V9M11 3H15M3 15H8M5 18H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                         </div>
                         <h4>Time-Sensitive Narrative Construction</h4>
                     </div>
@@ -1420,12 +1469,38 @@
                 
                 <div class="equipment-item">
                     <div class="equipment-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M4 6H2V18H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 6H22V18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 12C20 14.6522 18.9464 17.1957 17.0711 19.0711C15.1957 20.9464 12.6522 22 10 22C7.34784 22 4.8043 20.9464 2.92893 19.0711C1.05357 17.1957 0 14.6522 0 12C0 9.34784 1.05357 6.8043 2.92893 4.92893C4.8043 3.05357 7.34784 2 10 2C12.6522 2 15.1957 3.05357 17.0711 4.92893C18.9464 6.8043 20 9.34784 20 12V12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="40" width="40" version="1.1" id="Layer_1" viewBox="0 0 508 508" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M432.4,73.3H163.9c-15.6,0-28.8,9-39.7,24H66.8C22.9,97.3,0,176.1,0,254s22.9,156.7,66.8,156.7h57.5    c10.8,15.1,24.1,24,39.7,24h268.4c49.7,0,75.6-90.9,75.6-180.7S482,73.3,432.4,73.3z M109.3,382.5H66.8    c-13.1,0-38.6-45.4-38.6-128.5s25.5-128.5,38.6-128.5h42.5c-13.8,34.4-21,81.6-21,128.5S95.4,348.1,109.3,382.5z M163.9,406.5    c-19.3,0-47.4-59.4-47.4-152.5s28.1-152.5,47.4-152.5h92.5c-21.8,33.8-33.1,93.4-33.1,152.5s11.3,118.7,33.1,152.5H163.9z     M298.9,406.4v0.1c-19.3,0-47.4-59.4-47.4-152.5s28.1-152.5,47.4-152.5h90.9c-6.9,10.7-12.7,23.9-17.5,38.8h-69.6    c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1H365c-1.9,9.1-3.5,18.5-4.7,28.2h-29.4c-7.8,0-14.1,6.3-14.1,14.1    c0,7.8,6.3,14.1,14.1,14.1h26.7c-0.6,9.6-0.9,19.3-0.9,29c0,59.1,11.3,118.7,33.1,152.5H298.9z M432.4,406.5    c-19.3,0-47.4-59.4-47.4-152.5s28.1-152.5,47.4-152.5s47.4,59.4,47.4,152.5S451.7,406.5,432.4,406.5z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M204,120.9h-28.2c-7.8,0-14.1,6.3-14.1,14.1s6.3,14.1,14.1,14.1H204c7.8,0,14.1-6.3,14.1-14.1S211.8,120.9,204,120.9z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M189.6,180.4h-28.2c-7.8,0-14.1,6.3-14.1,14.1s6.3,14.1,14.1,14.1h28.2c7.8,0,14.1-6.3,14.1-14.1S197.4,180.4,189.6,180.4    z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M185.6,239.9h-28.2c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h28.2c7.8,0,14.1-6.3,14.1-14.1    C199.7,246.2,193.4,239.9,185.6,239.9z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M189.6,299.4h-28.2c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h28.2c7.8,0,14.1-6.3,14.1-14.1    S197.4,299.4,189.6,299.4z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M204,358.8h-28.2c-7.8,0-14.1,6.3-14.1,14.1S168,387,175.8,387H204c7.8,0,14.1-6.3,14.1-14.1    C218.2,365.2,211.8,358.8,204,358.8z"/>
+                                </g>
+                            </g>
+                            </svg>
                     </div>
                     <h4>Professional Lenses</h4>
                     <p>Know-how to match the situation to the right focal length and lens type</p>
@@ -1433,12 +1508,12 @@
                 
                 <div class="equipment-item">
                     <div class="equipment-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 12.5V12C2 10.1362 2 9.20435 2.30448 8.46927C2.71047 7.48915 3.48915 6.71047 4.46927 6.30448C5.20435 6 6.13616 6 8 6H16C17.8638 6 18.7957 6 19.5307 6.30448C20.5108 6.71047 21.2895 7.48915 21.6955 8.46927C22 9.20435 22 10.1362 22 12V12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M17 15.5V15.8C17 16.9201 17 17.4801 16.782 17.908C16.5903 18.2843 16.2843 18.5903 15.908 18.782C15.4802 19 14.9201 19 13.8 19H10.2C9.0799 19 8.51984 19 8.09202 18.782C7.71569 18.5903 7.40973 18.2843 7.21799 17.908C7 17.4801 7 16.9201 7 15.8V15.5C7 15.3674 7 15.3011 7.00384 15.2395C7.04922 14.562 7.5999 14.0113 8.27736 13.9659C8.33905 13.9621 8.40532 13.9621 8.53788 13.9621H15.4621C15.5947 13.9621 15.661 13.9621 15.7226 13.9659C16.4001 14.0113 16.9508 14.562 16.9962 15.2395C17 15.3011 17 15.3674 17 15.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10 13V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M14 13V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 11C8.10457 11 9 10.1046 9 9C9 7.89543 8.10457 7 7 7C5.89543 7 5 7.89543 5 9C5 10.1046 5.89543 11 7 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.56055 21C11.1305 11.1 15.7605 9.35991 21.0005 15.7899" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.35 3H5C3.93913 3 2.92172 3.42136 2.17157 4.17151C1.42142 4.92165 1 5.93913 1 7V17C1 18.0609 1.42142 19.0782 2.17157 19.8284C2.92172 20.5785 3.93913 21 5 21H17C18.0609 21 19.0783 20.5785 19.8284 19.8284C20.5786 19.0782 21 18.0609 21 17V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22.3098 3.16996L17.2098 8.26005C16.7098 8.77005 15.2098 8.99996 14.8698 8.66996C14.5298 8.33996 14.7598 6.82999 15.2698 6.31999L20.3599 1.23002C20.6171 0.964804 20.9692 0.812673 21.3386 0.807047C21.7081 0.80142 22.0646 0.942731 22.3298 1.19999C22.5951 1.45725 22.7472 1.8093 22.7529 2.17875C22.7585 2.5482 22.6171 2.90475 22.3599 3.16996H22.3098Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                     </div>
                     <h4>Editing Expertise</h4>
                     <p>Advanced skills in Adobe Lightroom, Photoshop and Topaz Labs to enhance images while maintaining authenticity</p>
@@ -1464,21 +1539,28 @@
     <div class="case-study-header">
         <div class="container">
             <span class="case-study-number">Case Study #4</span>
-            <h2 class="case-study-title">Golden Bell Awards</h2>
-            <p class="case-study-tagline">Showcasing educational excellence through compelling video storytelling that celebrates innovative programs and exceptional educators.</p>
-            
+            <h2 class="case-study-title">Golden Bell Awards Project</h2>
+            <p class="case-study-tagline">Creating a comprehensive video series to celebrate educational excellence across San Bernardino County.</p>
+            <a href="https://www.youtube.com/watch?v=ynKYXdV1lQU&list=PL1loU7saLXGrgXEjiAt_6KE5u55vkx9lO&index=2" target="_blank" class="view-project-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>View Live Project</span>
+            </a>
             <div class="project-meta">
                 <div class="meta-item">
-                    <span class="meta-label">Client</span>
-                    <span class="meta-value">Fontana Unified School District</span>
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">2 Months</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Project</span>
-                    <span class="meta-value">Summer Bridge Program</span>
+                    <span class="meta-label">Scale</span>
+                    <span class="meta-value">8 Videos</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Role</span>
-                    <span class="meta-value">Producer, Editor, Graphic Designer</span>
+                    <span class="meta-value">Producer, Editor, Audio Engineer, Motion Graphics Designer</span>
                 </div>
             </div>
         </div>
@@ -1492,7 +1574,7 @@
             <div class="project-overview fade-in">
                 <div class="overview-content">
                     <p class="overview-intro">
-                        The Golden Bell Awards recognize outstanding educational programs across California. As part of SBCSS's celebration of county winners, our team produced video profiles showcasing each program. This case study highlights the Fontana Unified School District's Summer Bridge Program video, one of eight videos produced for the awards ceremony.
+                        The Golden Bell Awards, presented by the California School Boards Association, recognize outstanding educational programs across the state. As part of SBCSS's celebration of county winners, our team produced <a href="https://www.youtube.com/watch?v=ynKYXdV1lQU&list=PL1loU7saLXGrgXEjiAt_6KE5u55vkx9lO&index=2" target="_blank" style="text-decoration:underline;"> a series of eight videos</a> showcasing these exemplary programs for an awards ceremony at the San Bernardino County School Boards Association meeting.
                     </p>
                     
                     <div class="overview-grid">
@@ -1503,51 +1585,33 @@
                                     <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                            <h4>Multi-Video Project</h4>
-                            <p>Part of a coordinated effort to produce eight distinct videos for different school districts, requiring consistent quality and branding while highlighting each program's unique aspects.</p>
+                            <h4>Series Consistency</h4>
+                            <p>Developed a unified visual identity across all eight videos while highlighting each program's unique achievements and educational approach.</p>
                         </div>
                         
                         <div class="overview-card">
                             <div class="overview-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M23 21V19C22.9986 17.1771 22.0691 15.4718 20.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17 3.13C18.5691 4.10145 19.4986 5.80675 19.5 7.63V7.63" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M16 3.13C17.7699 3.58317 19.0078 5.17565 19.0078 7.005C19.0078 8.83436 17.7699 10.4268 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </div>
-                            <h4>Student Mentorship Focus</h4>
-                            <p>Showcased how the Summer Bridge Program creates a culture of peer mentorship, with older students helping younger ones transition to high school, creating a powerful positive feedback loop.</p>
+                            <h4>Team Collaboration</h4>
+                            <p>A project of this magnitude requires extensive teamwork and communication to provide excellent customer service to our educational partners and deliver a high-quality product on time.</p>
                         </div>
                         
                         <div class="overview-card">
                             <div class="overview-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23 19C23 19.5304 22.7893 20.0391 22.4142 20.4142C22.0391 20.7893 21.5304 21 21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H7L9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 17C14.2091 17 16 15.2091 16 13C16 10.7909 14.2091 9 12 9C9.79086 9 8 10.7909 8 13C8 15.2091 9.79086 17 12 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                            <h4>Dynamic Visual Approach</h4>
-                            <p>Created an innovative map-based motion graphics intro that transitioned to on-the-road footage, establishing a unique visual identity that broke from conventional approaches used in previous years.</p>
+                            <h4>On-Location Production</h4>
+                            <p>Traveled to multiple school sites across the county, adapting to diverse environments while maintaining a consistent filming approach with dual-camera setups.</p>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="video-feature fade-in">
-                    <a href="https://www.youtube.com/watch?v=kbtd1jgBc-E" target="_blank">
-                        <div class="video-container">
-                            <img src="images/fusd.png" alt="Fontana Unified School District's Summer Bridge Program Video" class="video-thumbnail">
-                            <div class="play-button">
-                                <svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
-                                    <path d="M16 12L10 16V8L16 12Z" fill="white"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="video-caption">
-                        Fontana Unified School District's award-winning Summer Bridge Program
                     </div>
                 </div>
             </div>
@@ -1557,23 +1621,23 @@
         <div class="case-study-section">
             <h3 class="section-title"><span class="section-number">02</span> Creative Approach</h3>
             
-            <div class="approach-container">
+            <div class="social-challenges-grid">
                 <div class="approach-item fade-in">
                     <div class="approach-header">
                         <div class="approach-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 8L8 12L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M16 12H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                                <!-- Location pin outline -->
+                                <path d="M12 22C12 22 19 16 19 9C19 5.13401 15.866 2 12 2C8.13401 2 5 5.13401 5 9C5 16 12 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Inner circle -->
+                                <circle cx="12" cy="9" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                
+                               </svg>
                         </div>
                         <h4>Journey-Based Narrative</h4>
                     </div>
                     <div class="approach-content">
-                        <p>Created a compelling "journey" narrative by developing a custom map-based motion graphics sequence that transitioned to on-the-road footage, symbolizing the physical and metaphorical journey to achieve educational excellence.</p>
-                        <div class="approach-visual">
-                            <img src="images/map.png" alt="Map-based motion graphics for Golden Bell video" class="approach-image">
-                        </div>
+                        <p>Created a compelling "journey" theme across all videos through custom map-based motion graphics that transitioned to on-the-road footage. This visual metaphor represented both the physical journey to each school site and the educational journey of the highlighted programs.</p>
                     </div>
                 </div>
                 
@@ -1581,131 +1645,85 @@
                     <div class="approach-header">
                         <div class="approach-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 8H3V16H7V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21 8H17V16H21V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M3 12H7M17 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M14 14C15.1046 14 16 13.1046 16 12C16 10.8954 15.1046 10 14 10C12.8954 10 12 10.8954 12 12C12 13.1046 12.8954 14 14 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10 14C11.1046 14 12 13.1046 12 12C12 10.8954 11.1046 10 10 10C8.89543 10 8 10.8954 8 12C8 13.1046 8.89543 14 10 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </div>
-                        <h4>Sustainability Focus</h4>
+                        <h4>Stakeholder-Driven Storytelling</h4>
                     </div>
                     <div class="approach-content">
-                        <p>Highlighted each program's unique strength in creating a cyclical culture, carefully selecting interview segments that demonstrated this positive feedback loop and showing visual evidence of sustainability in action.</p>
+                        <p>Developed a multi-perspective approach for each program video, featuring administrators, teachers, and students to provide a comprehensive view of each program's impact. Structured interviews to highlight both the educational methodology and real-world outcomes.</p>
                     </div>
                 </div>
                 
                 <div class="approach-item fade-in">
                     <div class="approach-header">
                         <div class="approach-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22 16.7399V4.6699C22 3.4699 21.02 2.5799 19.83 2.6799H19.77C17.67 2.8599 14.48 3.9299 12.7 5.0499L12.53 5.1599C12.24 5.3399 11.76 5.3399 11.47 5.1599L11.22 5.0099C9.44 3.8999 6.26 2.8399 4.16 2.6699C2.97 2.5699 2 3.4699 2 4.6599V16.7399C2 17.6999 2.78 18.5999 3.74 18.7199L4.03 18.7599C6.2 19.0499 9.55 20.1499 11.47 21.1999L11.51 21.2199C11.78 21.3699 12.21 21.3699 12.47 21.2199C14.39 20.1599 17.75 19.0499 19.93 18.7599L20.26 18.7199C21.22 18.5999 22 17.6999 22 16.7399Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 5.48999V20.49" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="40" width="40" viewBox="0 0 24 24" >
+                                <g id="cycle">
+                                    <g>
+                                        <path d="M17.1,23.8L12.4,21l2.7-4.8l1.7,1l-1.7,3.1l3,1.8L17.1,23.8z M5.7,11L4,8L1.1,9.7L0.1,8l4.7-2.8L7.5,10L5.7,11z"/>
+                                    </g>
+                                    <g>
+                                        <polygon points="22,6 16.5,6 16.5,4 20,4 20,0.5 22,0.5   "/>
+                                    </g>
+                                    <g>
+                                        <path d="M15.4,21.5l-0.4-2c4-0.9,6.9-4.5,6.9-8.6c0-0.6-0.1-1.3-0.2-1.9l2-0.4c0.2,0.8,0.3,1.6,0.3,2.3    C24,16.1,20.4,20.5,15.4,21.5z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M9.8,21.3C5.3,19.9,2.2,15.8,2.2,11c0-1.3,0.2-2.6,0.7-3.8l1.9,0.7c-0.4,1-0.6,2-0.6,3.1c0,3.9,2.5,7.2,6.1,8.4L9.8,21.3z    "/>
+                                    </g>
+                                    <g>
+                                        <path d="M19.6,5c-1.7-1.9-4.1-3-6.6-3c-2.1,0-4.1,0.8-5.7,2.1L6,2.6C7.9,0.9,10.4,0,13,0c3.1,0,6,1.3,8.1,3.6L19.6,5z"/>
+                                    </g>
+                                </g>
+                                </svg>
                         </div>
-                        <h4>Visual Storytelling</h4>
+                        <h4>Series Continuity </h4>
                     </div>
                     <div class="approach-content">
-                        <p>Employed a dual-camera setup to capture authentic student interactions, strategically scheduling filming during active program hours to document genuine mentorship moments that substantiated the interview narratives.</p>
-                        <div class="approach-visual">
-                            <div class="visual-grid">
-                                <img src="images/collab-narrative.png" alt="Student interview setup" class="grid-image">
-                                <img src="images/collab.png" alt="Students mentoring each other" class="grid-image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="approach-item fade-in">
-                    <div class="approach-header">
-                        <div class="approach-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="2" y="2" width="20" height="20" rx="2.18" stroke="currentColor" stroke-width="2"/>
-                                <rect x="6" y="6" width="12" height="12" rx="1" stroke="currentColor" stroke-width="2"/>
-                                <path d="M4 10V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M20 10V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M10 20V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M14 20V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h4>Cohesive Presentation</h4>
-                    </div>
-                    <div class="approach-content">
-                        <p>Mixed and normalized all 8 videos for aural consistency. Customized motion graphics for the intro, lower thirds and transitions to maintain visual cohesion, creating a recognizable series while honoring each program's individual identity.</p>
+                        <p>Balanced consistency with uniqueness by creating a unified visual language while letting each program's distinct character shine through. Customized graphics intro, lower thirds and transitions that provided series recognition while representing each program's individual identity.</p>
                     </div>
                 </div>
             </div>
         </div>
         
-        <!-- Production Process Section -->
+        <!-- Project Spotlight Section -->
         <div class="case-study-section">
-            <h3 class="section-title"><span class="section-number">03</span> Production Process</h3>
+            <h3 class="section-title"><span class="section-number">03</span> Project Spotlight: Fontana Summer Bridge Program</h3>
             
-            <div class="process-timeline fade-in">
-                <div class="timeline-phase">
-                    <div class="phase-marker">
-                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 19L4 12L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 19L13 12L20 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="phase-content">
-                        <h4>Pre-Production Planning</h4>
-                        <p>Coordinated with the senior communications specialist to develop a production schedule for all eight videos within a tight timeline. For the Fontana video, researched the Summer Bridge Program and prepared tailored interview questions to elicit compelling responses about peer mentorship.</p>
-                        <div class="phase-details">
-                            <div class="detail-item">
-                                <span class="detail-label">Team Coordination</span>
-                                <span class="detail-value">Collaborated with senior communications specialist and digital media specialist</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Research</span>
-                                <span class="detail-value">Program background, key stakeholders, and visual opportunities</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Planning</span>
-                                <span class="detail-value">Production schedule, equipment list, and interview questions</span>
+            <div class="spotlight-container fade-in">
+                <div class="spotlight-intro">
+                    <p>The Fontana Unified School District's Summer Bridge Program exemplifies the innovative educational initiatives celebrated in our Golden Bell video series. This program creates a multi-generational mentorship model that helps students transition into high school while developing leadership skills in older participants.</p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=kbtd1jgBc-E" target="_blank">
+                    <div class="spotlight-media">
+                        <div class="video-container">
+                            <img src="images/fusd.jpg" alt="Fontana Unified School District's Summer Bridge Program Video" class="video-thumbnail">
+                            <div class="play-button">
+                                <svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
+                                    <path d="M16 12L10 16V8L16 12Z" fill="white"/>
+                                </svg>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="timeline-phase">
-                    <div class="phase-marker">
-                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M23 19C23 19.5304 22.7893 20.0391 22.4142 20.4142C22.0391 20.7893 21.5304 21 21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H7L9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 17C14.2091 17 16 15.2091 16 13C16 10.7909 14.2091 9 12 9C9.79086 9 8 10.7909 8 13C8 15.2091 9.79086 17 12 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                </a>
+                <div class="spotlight-details">
+                    <div class="spotlight-card">
+                        <h4>Creative Direction</h4>
+                        <p>For this specific video, I focused on the program's unique peer mentorship cycle. I carefully selected interview segments that demonstrated how older students help younger ones transition to high school, creating a self-reinforcing culture of leadership and support.</p>
                     </div>
-                    <div class="phase-content">
-                        <h4>On-Location Production</h4>
-                        <p>Traveled to each school to film their program in action. Set up dynamic lighting and dual-camera configurations to conduct in-depth interviews with students, teachers, and administrators while capturing authentic B-roll of program activities interactions.</p>
+                    
+                    <div class="spotlight-card">
+                        <h4>Production Approach</h4>
+                        <p>Used dual-camera setups to capture authentic student interactions during active program hours. This approach documented genuine mentorship moments that substantiated the interview narratives and showed the program's impact through real-time examples.</p>
                         
                     </div>
-                </div>
-                
-                <div class="timeline-phase">
-                    <div class="phase-marker">
-                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.24 2H8.76C5 2 4.71 5.38 6.74 7.22L17.26 16.78C19.29 18.62 19 22 15.24 22H8.76C5 22 4.71 18.62 6.74 16.78L17.26 7.22C19.29 5.38 19 2 15.24 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="phase-content">
-                        <h4>Post-Production</h4>
-                        <p>Developed the custom map-based motion graphics intro and lower thirds in After Effects. Selected and arranged the most impactful interview segments to highlight the most impactful narrative. Performed comprehensive audio mixing to ensure consistency across all eight videos in the series.</p>
-                        <div class="post-production-details">
-                            <div class="post-production-item">
-                                <span class="post-item-title">Video Editing</span>
-                                <p>Crafted a narrative-driven edit that balanced stakeholder perspectives with authentic student experiences</p>
-                            </div>
-                            <div class="post-production-item">
-                                <span class="post-item-title">Motion Graphics</span>
-                                <p>Created custom animated lower thirds and transitions that established visual continuity across all eight videos</p>
-                            </div>
-                            <div class="post-production-item">
-                                <span class="post-item-title">Audio Engineering</span>
-                                <p>Performed detailed audio mixing to ensure clarity and consistency throughout the production</p>
-                            </div>
-                        </div>
+                    
+                    <div class="spotlight-card">
+                        <h4>Narrative Structure</h4>
+                        <p>Structured the video to show how the program creates a positive feedback loop—new students become mentors in subsequent years, strengthening the program's effectiveness over time. This storytelling approach revealed both immediate benefits and long-term program sustainability.</p>
                     </div>
                 </div>
             </div>
@@ -1715,10 +1733,10 @@
         <div class="case-study-section">
             <h3 class="section-title"><span class="section-number">04</span> Challenges & Solutions</h3>
             
-            <div class="video-challenges-grid">
-                <div class="video-challenge-card fade-in">
-                    <div class="video-challenge-header">
-                        <div class="video-challenge-icon">
+            <div class="challenges-grid">
+                <div class="challenge-card fade-in">
+                    <div class="challenge-header">
+                        <div class="challenge-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1726,8 +1744,8 @@
                         </div>
                         <h4>Tight Production Timeline</h4>
                     </div>
-                    <div class="video-challenge-content">
-                        <p class="video-challenge-description">
+                    <div class="challenge-content">
+                        <p class="challenge-description">
                             With eight videos to produce for different districts while maintaining consistent quality, the timeline presented significant challenges for planning, production, and post-production.
                         </p>
                         <div class="solution-box">
@@ -1737,17 +1755,17 @@
                     </div>
                 </div>
                 
-                <div class="video-challenge-card fade-in">
-                    <div class="video-challenge-header">
-                        <div class="video-challenge-icon">
+                <div class="challenge-card fade-in">
+                    <div class="challenge-header">
+                        <div class="challenge-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                         <h4>Diverse Program Environments</h4>
                     </div>
-                    <div class="video-challenge-content">
-                        <p class="video-challenge-description">
+                    <div class="challenge-content">
+                        <p class="challenge-description">
                             Each Golden Bell program operated in different environments with varying visual opportunities and constraints, making it difficult to maintain visual consistency across all videos.
                         </p>
                         <div class="solution-box">
@@ -1757,24 +1775,24 @@
                     </div>
                 </div>
                 
-                <div class="video-challenge-card fade-in">
-                    <div class="video-challenge-header">
-                        <div class="video-challenge-icon">
+                <div class="challenge-card fade-in">
+                    <div class="challenge-header">
+                        <div class="challenge-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.29 3.86001L1.82001 18C1.64538 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3437 1.64151 19.6871 1.81445 19.9905C1.98738 20.2939 2.23675 20.5468 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53001 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5318 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3438 2.89726 12 2.89726C11.6563 2.89726 11.3184 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 9V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 17H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h4>Balancing Multiple Narratives</h4>
+                        <h4>Audio Consistency Across Locations</h4>
                     </div>
-                    <div class="video-challenge-content">
-                        <p class="video-challenge-description">
-                            The Summer Bridge Program involved various stakeholders with different perspectives on the program's value, making it challenging to create a focused narrative while honoring all voices.
+                    <div class="challenge-content">
+                        <p class="challenge-description">
+                            Different acoustic environments created challenges for maintaining consistent audio quality across all eight videos, particularly with outdoor locations and noisy school settings.
                         </p>
                         <div class="solution-box">
                             <h5>Solution:</h5>
-                            <p>Identified the recurring theme of peer mentorship across interviews and made this the central narrative thread. Selectively edited interviews to create a cohesive story while ensuring all key stakeholders' perspectives were represented.</p>
+                            <p>Implemented detailed audio post-production protocols for each video, including targeted noise reduction, EQ matching, and comprehensive mixing to ensure a consistent audio experience throughout the series despite varying recording conditions.</p>
                         </div>
                     </div>
                 </div>
@@ -1787,7 +1805,7 @@
             
             <div class="skills-container">
                 <div class="skill-tag">Video Production</div>
-                <div class="skill-tag">Lighting</div>
+                <div class="skill-tag">Motion Graphics</div>
                 <div class="skill-tag">After Effects</div>
                 <div class="skill-tag">Final Cut Pro</div>
                 <div class="skill-tag">Interviewing</div>
@@ -1804,16 +1822,16 @@
                 </div>
                 <ul class="takeaway-list">
                     <li>
-                        <span class="takeaway-highlight">Innovative Motion Graphics:</span> Created a unique visual identity through custom map-based graphics that differentiated the series from previous years' approaches.
+                        <span class="takeaway-highlight">Team Coordination Is Essential:</span> The importance of pre-planning, scheduling, communication, and teamwork made it possible to produce eight high-quality videos on a tight timeline.
                     </li>
                     <li>
-                        <span class="takeaway-highlight">Consistent Quality Under Pressure:</span> Maintained high production standards across multiple videos despite tight timelines through systematic workflow and team collaboration.
+                        <span class="takeaway-highlight">Technical Craft Creates Cohesion:</span> Utilizing audio mixing, color grading, and consistent motion graphics established a unified identity across multiple videos while highlighting each program's uniqueness.
                     </li>
                     <li>
-                        <span class="takeaway-highlight">Student-Centered Storytelling:</span> Focused on authentic student experiences to create emotionally resonant content that highlighted the program's impact.
+                        <span class="takeaway-highlight">Excellence Inspires Excellence:</span> Witnessing educational innovation across our county motivated all event attendees to continue excelling in their own work and seeking innovative ways to transform lives through education.
                     </li>
                     <li>
-                        <span class="takeaway-highlight">Technical Versatility:</span> Demonstrated adaptability across multiple production environments while ensuring consistent visual and audio quality.
+                        <span class="takeaway-highlight">Human Connection Elevates Content:</span> Being personable and establishing rapport with interviewees created comfortable environments that yielded more authentic, compelling responses and stronger narratives.
                     </li>
                 </ul>
             </div>
@@ -1828,7 +1846,14 @@
             <span class="case-study-number">Case Study #5</span>
             <h2 class="case-study-title">SBCSS Annual Report</h2>
             <p class="case-study-tagline">Crafting compelling narratives that showcase educational impact through concise, data-driven storytelling and strategic collaboration.</p>
-            
+            <a href="https://online.flippingbook.com/view/500857367/" target="_blank" class="view-project-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>View Live Project</span>
+            </a>
             <div class="project-meta">
                 <div class="meta-item">
                     <span class="meta-label">Publication</span>
@@ -1836,7 +1861,7 @@
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Role</span>
-                    <span class="meta-value">Lead Writer & Content Strategist</span>
+                    <span class="meta-value">Co-Lead Writer & Content Strategist</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Format</span>
@@ -1884,10 +1909,12 @@
                     <div class="principles-grid">
                         <div class="principle-card">
                             <div class="principle-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.99872 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 1C19 0.447715 19.4477 0 20 0C20.5523 0 21 0.447715 21 1V1.58582L22.2709 0.314894C22.6614 -0.0756305 23.2946 -0.0756294 23.6851 0.314895C24.0757 0.705419 24.0757 1.33858 23.6851 1.72911L22.4142 3H23C23.5523 3 24 3.44772 24 4C24 4.55228 23.5523 5 23 5H20.4142L12.7017 12.7125C12.3112 13.103 11.678 13.103 11.2875 12.7125C10.897 12.322 10.897 11.6888 11.2875 11.2983L19 3.58582V1Z" fill="currentColor"/>
+                                    <path d="M17.3924 3.78908C17.834 3.3475 17.7677 2.61075 17.2182 2.31408C15.6655 1.47581 13.8883 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 10.1154 22.5261 8.34153 21.6909 6.79102C21.3946 6.24091 20.6574 6.17424 20.2155 6.61606L20.1856 6.64598C19.8554 6.97615 19.8032 7.48834 20.016 7.90397C20.6451 9.1326 21 10.5249 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C13.4782 3 14.8732 3.35638 16.1037 3.98791C16.5195 4.20129 17.0322 4.14929 17.3627 3.81884L17.3924 3.78908Z" fill="currentColor"/>
+                                    <path d="M14.3899 6.79159C14.8625 6.31902 14.7436 5.52327 14.1062 5.32241C13.4415 5.11295 12.7339 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 11.2702 18.8883 10.5664 18.6811 9.9049C18.4811 9.26659 17.6846 9.14697 17.2117 9.61995L17.1194 9.71224C16.8382 9.99337 16.7595 10.4124 16.8547 10.7984C16.9496 11.1833 17 11.5858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C12.4172 7 12.8225 7.0511 13.21 7.1474C13.5965 7.24347 14.0166 7.16496 14.2982 6.88331L14.3899 6.79159Z" fill="currentColor"/>
+                                    <path d="M11.078 9.15136C11.4874 9.01484 11.6934 9.48809 11.3882 9.79329L10.5827 10.5989C9.80254 11.379 9.80254 12.6438 10.5827 13.4239C11.3628 14.204 12.6276 14.204 13.4077 13.4239L14.2031 12.6285C14.5089 12.3227 14.9822 12.5301 14.8429 12.9397C14.441 14.1209 13.3135 15 12 15C10.3431 15 9 13.6569 9 12C9 10.6796 9.88827 9.54802 11.078 9.15136Z" fill="currentColor"/>
+                                    </svg>
                             </div>
                             <h5>Precision & Accuracy</h5>
                             <p>Contacted key stakeholders to obtain precise data and statistics, ensuring all information was verifiable and accurately represented the organization's impact.</p>
@@ -1896,9 +1923,7 @@
                         <div class="principle-card">
                             <div class="principle-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
                             <h5>Journalistic Integrity</h5>
@@ -1907,11 +1932,7 @@
                         
                         <div class="principle-card">
                             <div class="principle-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M4 15L8 11L12 15L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17 7H17.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="40" height="40" viewBox="0 0 32 32" id="icon"><defs><style>.cls-1{fill:none;}</style></defs><title>visual-recognition</title><circle cx="23" cy="12" r="2"/><path d="M28,5H16.24A8,8,0,1,0,6,16.92V27a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V7A2,2,0,0,0,28,5ZM4,10A6,6,0,0,1,15.19,7H8V9h7.91A6.64,6.64,0,0,1,16,10a6.64,6.64,0,0,1-.09,1H10v2h5.19A6,6,0,0,1,4,10ZM28,27H8l5-5,1.59,1.59a2,2,0,0,0,2.82,0L23,18l5,5Zm0-6.83-3.59-3.59a2,2,0,0,0-2.82,0L16,22.17l-1.59-1.59a2,2,0,0,0-2.82,0L8,24.17V17.74A8.24,8.24,0,0,0,10,18a8,8,0,0,0,8-8,7.9,7.9,0,0,0-.59-3H28Z"/><rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/></svg>
                             </div>
                             <h5>Visual Thinking</h5>
                             <p>Identified opportunities to transform complex data into compelling infographics, enhancing readability and visual engagement while maintaining informational integrity.</p>
@@ -1920,10 +1941,10 @@
                         <div class="principle-card">
                             <div class="principle-icon">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M23 21V19C22.9986 17.1771 22.0691 15.4718 20.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17 3.13C18.5691 4.10145 19.4986 5.80675 19.5 7.63V7.63" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                    <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                    <path d="M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                    <path d="M16 3.13C17.7699 3.58317 19.0078 5.17565 19.0078 7.005C19.0078 8.83436 17.7699 10.4268 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                                 </svg>
                             </div>
                             <h5>Community Focus</h5>
@@ -1934,35 +1955,81 @@
                 
                 <div class="writing-examples fade-in">
                     <h4>Featured Passages</h4>
-                    <div class="writing-example">
-                        <div class="example-header">
-                            <span class="example-page">Page 4</span>
-                            <h5>District Support Services</h5>
+                    <a href="https://online.flippingbook.com/view/500857367/6/" target="_blank">
+                        <div class="writing-example">
+                            <div class="example-header">
+                                <span class="example-page">Page 6</span>
+                                <h5>Spotlight On Literacy</h5>
+                            </div>
+                            <div class="example-content">
+                                <p class="example-text">"SBCSS is revolutionizing early literacy through two interconnected initiatives. Footsteps2Brilliance offers
+                                    a free comprehensive online
+                                    platform with over 1,000
+                                    interactive books, games
+                                    and songs in English and
+                                    Spanish for pre-K through
+                                    3rd grade students. In partnership with KVCR, SBCSS
+                                    launched Learn with Me, an
+                                    innovative bilingual series blending
+                                    television and digital content to
+                                    address kindergarten readiness and
+                                    21st-century skill development. Together, these free programs provide a multi-faceted approach
+                                    to early education, empowering parents to be their first teachers
+                                    and ensuring equitable access to quality learning resources across
+                                    various platforms."</p><br>
+                                    <p>Worked with Nancy Sherrod, Early Education and Development Coordinator, to discuss the impact of these programs and the precise metrics that would best exemplify this effect. Collaborated with the lead Creative Designer to create one of the most unique layouts of the report while still adhering to space constraits.</p>
+                            </div>
                         </div>
-                        <div class="example-content">
-                            <p class="example-text">"Our district's commitment to excellence is reflected in the innovative programs we've implemented this year, reaching over 3,000 students across 33 school districts. Through collaborative partnerships with local businesses, we've created 15 new career pathway programs, giving students hands-on experience in high-demand industries."</p>
+                    </a>
+                    <a href="https://online.flippingbook.com/view/500857367/8/" target="_blank">
+                        <div class="writing-example">
+                            <div class="example-header">
+                                <span class="example-page">Page 8</span>
+                                <h5>Worforce Development</h5>
+                            </div>
+                            <div class="example-content">
+                                <p class="example-text">"SBCSS, in partnership with Skillionaire Games, launched an innovative series of free mobile and web
+                                    games to make career education more engaging."</p><br>
+                                    <p>I worked with Deidra Puentes, SWP K12 Pathway Coordinator, to gather in-depth metrics for the games in this collaboration, selected the most impressive stat for each game and worked with the design team to create a clear, visually-striking layout for the information.</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="writing-example">
-                        <div class="example-header">
-                            <span class="example-page">Page 12</span>
-                            <h5>Community Partnerships</h5>
+                    </a>
+                    <a href="https://online.flippingbook.com/view/500857367/10/" target="_blank">
+                        <div class="writing-example">
+                            <div class="example-header">
+                                <span class="example-page">Page 10</span>
+                                <h5>Sparking AI Literacy Across San Bernardino</h5>
+                            </div>
+                            <div class="example-content">
+                                <p class="example-text">"Over the past year, SBCSS hosted SPARK Your Leadership, an innovative three-part workshop series
+                                    led by Dr. Sabba Quidwai, to equip educational leaders with essential AI skills. This opportunity
+                                    develops educator’s AI literacy, mastery of cutting-edge tools, and collaborative AI policy
+                                    development for K-12 environments. Through sessions focused on the SPARK Framework, ethical AI
+                                    use, and instructional strategies, participants gained crucial competencies to navigate AI’s rapidly
+                                    growing impact on education. This proactive approach ensures schools throughout the County
+                                    are well-positioned to harness AI’s potential responsibly, fostering a culture of innovation that will
+                                    transform learning for students."</p>
+                            </div>
                         </div>
-                        <div class="example-content">
-                            <p class="example-text">"By focusing on equity-centered practices, we've seen a 27% increase in academic achievement among historically underserved student populations. Our educators are the heart of our mission. This year, 94% of our teachers participated in professional development focused on integrating technology and social-emotional learning."</p>
+                    </a>
+                    <a href="https://online.flippingbook.com/view/500857367/11/" target="_blank">
+                        <div class="writing-example">
+                            <div class="example-header">
+                                <span class="example-page">Page 11</span>
+                                <h5>SBCSS Spotlights Visual and Performing Arts</h5>
+                            </div>
+                            <div class="example-content">
+                                <p class="example-text">"SBCSS celebrated student artistry through a series of inspiring events in
+                                    the 2023-2024 school year. From honor band concerts and performing
+                                    arts showcases to visual art exhibitions and poetry competitions, these
+                                    events not only offered a platform for the diverse talents of students across
+                                    the County but also provided an opportunity to practice creativity, build
+                                    confidence, and enhance critical thinking skills. SBCSS is committed to
+                                    providing multiple pathways towards a well-rounded educational experience
+                                    that prepares students for future success."</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="writing-example">
-                        <div class="example-header">
-                            <span class="example-page">Page 18</span>
-                            <h5>Educational Outcomes</h5>
-                        </div>
-                        <div class="example-content">
-                            <p class="example-text">"Through collaborative partnerships with local businesses, we've created 15 new career pathway programs, giving students hands-on experience in high-demand industries."</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -2185,7 +2252,7 @@
                 
                 <p>During our interview, I welcome questions about any specific aspects of these projects that interest you&mdash;whether it's the technical challenges of the website redesign, the storytelling approach in each video production, or the collaborative process behind the annual report.</p>
                 
-                <p>I'm passionate about creating communications that connect authentically with audiences while advancing organizational goals. I'd be delighted to discuss these projects in greater depth and share my vision for which strategic initiatives can enhance future communication efforts.</p>
+                <p>I'm passionate about creating communications that connect authentically with audiences while advancing organizational goals. I'd be delighted to discuss these projects in greater depth and share my vision for which strategic initiatives can help enhance future communication efforts.</p>
                 
                 <p>In partnership,</p>
 

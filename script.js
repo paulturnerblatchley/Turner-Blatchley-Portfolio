@@ -1,7 +1,7 @@
 // Fixed Navigation
 document.addEventListener('DOMContentLoaded', function() {
     // Get the navigation element
-    const fixedNav = document.getElementById('fixed-nav');
+    const fixedNav = document.getElementById('portfolio-nav');
     
     if (!fixedNav) {
         console.error("Navigation element not found!");
@@ -239,19 +239,6 @@ function initSkillTagEffects() {
     });
 }
 
-// Video play functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const videoFrames = document.querySelectorAll('.frame-content, .demo-video');
-    
-    videoFrames.forEach(frame => {
-        frame.addEventListener('click', function() {
-            // This would typically launch a video modal
-            // For now, we'll just show an alert
-            alert('In a live implementation, this would play the video.');
-        });
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     // Get all tab buttons and sections
     const tabs = document.querySelectorAll('.arch-tab');
@@ -274,3 +261,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Navigation Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.getElementById('portfolio-nav');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+
+    
+    // Toggle mobile nav
+    menuToggle.addEventListener('click', function() {
+        mobileNav.classList.toggle('active');
+    });
+    
+    // Close mobile nav when clicking a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            
+            // Update active link state
+            navLinks.forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            this.classList.add('active');
+        });
+    });
+});
