@@ -1243,7 +1243,7 @@ img {
     .timeline-marker {
         width: 20px;
         height: 20px;
-        left: -2.2rem;
+        left: -1.8rem;
     }
     
     .section-number {
@@ -1801,6 +1801,10 @@ img {
         top: 50px;
         height: calc(100% - 50px);
     }
+
+    .workflow-step::after {
+        display: none;
+    }
     
     .step-number {
         margin-bottom: 1rem;
@@ -2286,6 +2290,14 @@ img {
 @media (max-width: 768px) {
     .reel-showcase {
         grid-template-columns: 1fr;
+    }
+
+    .reel-details .post-header {
+        gap:10px;
+    }
+
+    .spanInstagram {
+        display: none;
     }
     
     .engagement-metrics {
@@ -3270,7 +3282,7 @@ background-color: #fff;
     }
     
     .process-timeline {
-        padding-left: 2.5rem;
+        padding-left: 2rem;
     }
     
     .phase-marker {
